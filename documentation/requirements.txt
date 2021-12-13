@@ -1,0 +1,21 @@
+Tequirements
+
+Files needed:
+
+
+Libraries neded:
+    SQLite3 Source Code == 3.36.0
+    Packaged in zip:       sqlite-amalgamation-3360000.zip
+
+
+Library setup:
+  Windows:   
+    SQLite3 Precompiled Binaries + tools == 3.36.0 
+    Packaged in zip:  sqlite-tools-win32-x86-3360000.zip
+  Linux:
+    SQLite3 Precompiled Binaries + tools == 3.36.0 
+    Packaged in zip:  sqlite-tools-linux-x86-3360000.zip
+    
+    
+
+Hardwere needed:

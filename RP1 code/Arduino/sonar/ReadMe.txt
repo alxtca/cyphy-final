@@ -1,0 +1,1 @@
+Open sonar.ino in Arduino IDE and flash to Arduino Mega 2560
