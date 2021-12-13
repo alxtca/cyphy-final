@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <main>
+    <div class="plate">
+      <div class="dashboard">
+        <div class="avatar">
+          <h1>{% block menu_title %}{% endblock %}</h1>
+        </div>
+
+        <div class="stats">
+            <ul id="buttons">
+              {% block menu_options %}{% endblock %}   
+            </ul>
+        </div>
+
+        <div class="stats"></div>
+
+      </div>
+
+      <div class="gameboard">
+
+        {% if title != "" %}
+        <div class="game">
+          <p>{{ title }}</p>
+        </div>
+        {% endif %}
+
+        {% if error != "" %}
+        <div class="game">
+          <p class="error">{{ error }}</p>
+        </div>
+        {% endif %}
+
+        <div class="game">
+          {% block res1 %}{% endblock %}
+        </div>
+
+        <div class="game">
+          {% block res2 %}{% endblock %}
+        </div>
+
+        <div class="game">
+          {% block res3 %}{% endblock %}
+        </div>
+
+        <div class="game">
+          {% block form %}{% endblock %}
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  <div></div>
+</body>
+</html>

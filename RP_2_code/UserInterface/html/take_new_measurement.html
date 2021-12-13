@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Ta måling{% endblock %}
+{% block menu_title %}Registrer ny bruker{% endblock %}
+{% block menu_options %}
+<li>
+    <a href="/">Tilbake til hovedmeny</a>
+</li> 
+{% endblock %}
+{% block form %}
+<form action="/reg_height" method="POST">
+    <input type="text" name="user_name" value="{{ u_name }}" readonly><br>
+    <input type="submit" value="Ta måling nå">
+</form>
+{% endblock %}

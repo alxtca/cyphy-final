@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Oppdater bruker{% endblock %}
+{% block menu_title %}Oppdater bruker{% endblock %}
+{% block menu_options %}
+<li>
+    <a href="/">Tilbake til hovedmeny</a>
+</li> 
+{% endblock %}
+{% block form %}
+<form action="/check_existing_user" method="POST">
+    <label for="user_name">fyll in brukernavn:</label><br>
+    <input type="text" name="user_name" value=""><br>
+    <input type="submit" value="sjekk om bruker er i database">
+</form>
+{% endblock %}

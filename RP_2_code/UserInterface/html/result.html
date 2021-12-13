@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Resultat{% endblock %}
+{% block menu_title %}Resultat{% endblock %}
+{% block menu_options %}
+<li>
+    <a href="/">Tilbake til hovedmeny</a>
+</li> 
+{% endblock %}
+
+{% block res1 %}
+<h2>{{ u_name }}</h2>
+<h2>din høyde er: {{ height }}cm</h2>
+{% endblock %}
+
+{% block res2 %}
+<h2>{{ message }}</h2>
+{% endblock %}
+
+{% block res3 %}
+<img src="img/{{ file_name }}">
+{% endblock %}
+
+
+{% block form %}
+{% if above > 0 %}
+<h2>
+    med {{ above }}cm
+</h2>
+{% endif %}
+{% endblock %}

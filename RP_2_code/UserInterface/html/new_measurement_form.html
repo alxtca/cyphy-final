@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Registrer ny bruker{% endblock %}
+{% block menu_title %}Ny bruker{% endblock %}
+{% block menu_options %}
+<li>
+    <a href="/">Tilbake til hovedmeny</a>
+</li> 
+{% endblock %}
+{% block form %}
+<form action="/check_new_user" method="POST">
+    <label for="user_name">Brukernavn:</label><br>
+    <input type="text" name="user_name" value="" maxlength="19"><br>
+    <input type="submit" value="Sjekk om bruker navn er ledig">
+</form>
+{% endblock %}
